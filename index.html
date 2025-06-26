@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Link to JS Files -->
+    <script src="./pokemon.js" defer></script>
+    <script src="./search.js" defer></script>
+</head>
+<body>
+    <main class="main">
+        <header class="header home">
+            <div class="container">
+                <div class="logo-wrapper">
+                    <img src="./assets/pokeball.svg" alt="pokeball">
+                    <h1>Pokédex</h1>
+                </div>
+                <div class="search-wrapper">
+                    <div class="search-wrap">
+                        <img src="./assets/search.svg" alt="search icon" class="search-icon">
+                        <input type="text" class="search-input body3-fonts" placeholder="Search for a Pokémon" id="search-input">
+                        <img src="./assets/cross.svg" alt="cross icon" class="search-close-icon" id="search-close-icon">
+                    </div>
+                    <div class="sort-wrapper">
+                        <div class="sort-wrap">
+                            <img src="./assets/sorting.svg" alt="sort icon" class="sort-icon" id="sort-icon">
+                        </div>
+                        <div class="filter-wrapper">
+                            <p class="body2-fonts">Search Using:</p>
+                            <div class="filter-wrap">
+                                <div>
+                                    <input type="radio" id="number" name="filters" value="number" checked>
+                                    <label for="number" class="body3-fonts">Number</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="name" name="filters" value="name">
+                                    <label for="name" class="body3-fonts">Name</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="pokemon-list">
+            <div class="container">
+                <div class="list-wrapper"> </div>
+                <div id="not-found-message">The Pokémon you entered either: <br> Does not exist <br> Or is not in this Pokédex :(</div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
